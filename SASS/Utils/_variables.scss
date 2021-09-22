@@ -15,8 +15,10 @@ $light-primary-color: lighten(#9356DC, 20%);
 
 // Boutons COLOR ===========
 $color-primary: #9356DC;
-$color-decondary:#ff79da;
+$color-secondary:#ff79da;
 $color-tertiary:#99e2d0;
+$color-dark-green: #2c9c81;
+$color-background: #f2f2f2;
 
 //TEXT-size-style-family-weight
 $font-texte: 'Roboto', 'sans-serif';
@@ -24,5 +26,9 @@ $font-logo:"Shrikhand", "cursive";
 $weight: 300, 400, 500, 600, 700, 800, 900; 
 
 
+/*Font type*/
 
+$fontSize: 25px;
+
+$fontWeight: bold;
 
