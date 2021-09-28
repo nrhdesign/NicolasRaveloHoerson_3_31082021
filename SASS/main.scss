@@ -5,9 +5,11 @@
 @import "./utils/_variables";
 @import "./utils/_functions";
 @import "./utils/_mixins";
+@import "./layout/_header";
 @import "./base/_base";
-@import "./layout/footer";
+@import "./layout/_footer";
+@import "./layout/_aside";
 @import "./base/_typography";
 @import "./components/_buttons";
-@import "./layout/_header";
+
 @import "./layout/_container";

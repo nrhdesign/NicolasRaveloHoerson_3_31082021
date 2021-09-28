@@ -5,3 +5,10 @@ main {
     margin-right: auto;
     max-width: 1440px;
   }
+
+  .reserve {
+    flex: 100%;
+    text-align: center;
+    padding: 30px 10px;
+    background-color: $color-background;
+  }
