@@ -1,0 +1,99 @@
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 5px;
+    &__title {
+      font-size: 18px;
+      font-weight: $fontWeight;
+      font-family: $text-font;
+      margin-bottom: 15px;
+    }
+  
+    %backgroundgradient {
+      @include lineargarden;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    &__step {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      @include tablette-only {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        width: 100%;
+      }
+    }
+    &__button {
+      flex: 1 0 auto;
+      margin-bottom: 20px;
+      text-decoration: none;
+      background: $color-background-2;
+      border-radius: 30px;
+      text-align: justify;
+      margin-left: 0;
+      font-size: 12px;
+      font-family: $text-font;
+      color: $color-black;
+      font-weight: $fontWeight;
+      padding: 20px 15px;
+      @include shadowbox;
+      &:hover {
+        background: #f2eafb;
+        box-shadow: 2px 2px 10px 2px #e4d5f6;
+        .aside__icons {
+          color: $color-primary;
+        }
+      }
+      @include tablette-only {
+        flex: 100%;
+        margin-left: 20px;
+        padding: 10px 5px;
+      }
+    }
+    &__circle {
+      position: absolute;
+      left: 12px;
+      margin-top: -7px;
+      background: $color-primary;
+      border-radius: 100%;
+      color: #fff;
+      height: 25px;
+      width: 25px;
+      line-height: 1.67;
+      padding: 2px 10px;
+      font-weight: $fontWeight;
+      @include tablette-only {
+        display: block;
+        position: relative;
+        left: -12px;
+        top: 10px;
+      }
+    }
+    &__icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: grey;
+      margin: 0 20px 0 25px;
+      position: absolute;
+      font-size: 20px;
+      @include tablette-only {
+        margin-left: 40px;
+        margin-top: -10px;
+      }
+    }
+    &__texte {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 14px;
+      @include tablette-only {
+        display: block;
+        text-align: center;
+        margin-top: -11px;
+      }
+    }
+  }
